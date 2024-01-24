@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/fact.css}">
+
+</head>
+<body>
+
+<article class="card">
+    <img
+            class="card__background"
+            th:src="*{dog.photoURL}"
+            alt="cat"
+            width="1920"
+            height="2193"
+    />
+    <div class="card__content | flow">
+        <div class="card__content--container | flow">
+            <h2 class="card__title">Enjoy your fact</h2>
+            <p class="card__description" th:text="*{dog.content}"></p>
+        </div>
+    </div>
+</article>
+
+</body>
+</html>

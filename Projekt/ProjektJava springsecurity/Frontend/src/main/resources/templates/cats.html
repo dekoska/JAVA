@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/fact.css}">
+</head>
+<body>
+
+<!--<div class="container">-->
+<!--    <div class="card">-->
+<!--        <div class="img-container">-->
+<!--            <img class="rainbow-box-photo" th:src="*{cat.photoURL}" loading="eager" style="height: 360px">-->
+<!--        </div>-->
+<!--        <div class="card-content">-->
+<!--            <h1>That is your fact, enjoy</h1>-->
+<!--            <p class="excerpt" th:text="*{cat.content}"></p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<article class="card">
+    <img
+            class="card__background"
+            th:src="*{cat.photoURL}"
+            alt="cat"
+            width="1920"
+            height="2193"
+    />
+    <div class="card__content | flow">
+        <div class="card__content--container | flow">
+            <h2 class="card__title">Enjoy your fact</h2>
+            <p class="card__description" th:text="*{cat.content}"></p>
+        </div>
+    </div>
+</article>
+
+
+</body>
+</html>
