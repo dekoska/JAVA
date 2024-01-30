@@ -12,8 +12,8 @@ import java.util.Random;
 @Service
 public class CatService {
 
-    RestClient restClient;
-    public static final String API_URL="http://localhost:8080";
+    private final RestClient restClient;
+    private final String API_URL="http://localhost:8080";
 
     public CatService() {
         this.restClient = RestClient.create();

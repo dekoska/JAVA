@@ -1,5 +1,8 @@
 .background {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("https://images4.alphacoders.com/247/247154.jpg");
+  background-image:url("https://images4.alphacoders.com/247/247154.jpg") ;
+    /*background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://images4.alphacoders.com/247/247154.jpg");*/
+
+    /*background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("https://images4.alphacoders.com/247/247154.jpg");*/
 }
 
 * {

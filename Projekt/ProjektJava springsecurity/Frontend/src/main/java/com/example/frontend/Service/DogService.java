@@ -11,8 +11,8 @@ import java.util.Random;
 @Service
 public class DogService {
 
-    RestClient restClient;
-    public static final String API_URL="http://localhost:8080";
+    private final RestClient restClient;
+    private final String API_URL="http://localhost:8080";
 
     public DogService() {
         this.restClient = RestClient.create();

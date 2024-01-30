@@ -1,9 +1,8 @@
-package com.example.backend.Service;
+package com.example.backend.service;
 
-import com.example.backend.Exceptions.DogAlreadyExistsException;
-import com.example.backend.Exceptions.DogNotFoundException;
-import com.example.backend.Object.Dog;
-import com.example.backend.Repository.DogRepository;
+import com.example.backend.exception.exceptions.DogNotFoundException;
+import com.example.backend.object.Dog;
+import com.example.backend.repository.DogRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

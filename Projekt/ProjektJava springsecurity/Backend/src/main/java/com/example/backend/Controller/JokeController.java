@@ -1,7 +1,7 @@
-package com.example.backend.Controller;
+package com.example.backend.controller;
 
-import com.example.backend.Object.Joke;
-import com.example.backend.Service.JokeService;
+import com.example.backend.object.Joke;
+import com.example.backend.service.JokeService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

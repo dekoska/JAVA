@@ -1,9 +1,9 @@
-package com.example.apidownloader.Service;
+package com.example.apidownloader.service;
 
-import com.example.apidownloader.Downloaders.DogFactsDownloaderApi;
-import com.example.apidownloader.Downloaders.DogPicturesDownloaderApi;
-import com.example.apidownloader.Object.Dog;
-import com.example.apidownloader.Repository.DogRepository;
+import com.example.apidownloader.downloader.DogFactsDownloaderApi;
+import com.example.apidownloader.downloader.DogPicturesDownloaderApi;
+import com.example.apidownloader.object.Dog;
+import com.example.apidownloader.repository.DogRepository;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,4 +1,4 @@
-package com.example.apidownloader.Object;
+package com.example.apidownloader.object;
 
 import jakarta.persistence.*;
 

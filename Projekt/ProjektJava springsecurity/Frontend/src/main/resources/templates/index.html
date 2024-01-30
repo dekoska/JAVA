@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <title>Home Page</title>
@@ -7,13 +7,22 @@
 </head>
 
 <body>
+
+<div class="logged" th:if="${#authorization.expression('isAuthenticated()')}">
+    <div class="text_shadows-hello">
+        <p>Hello, <span th:text="${#authentication.name}"></span>!</p>
+    </div>
+<div class="unlocked-buttons">
+    <a href="http://localhost:8081/logout"><button class="glow-on-hover" role="button">Logout</button></a>
+</div>
+</div>
     <div class="buttons">
-        <a href="http://localhost:8081/login"><button class="glow-on-hover" role="button">Log in</button></a>
-        <a href="http://localhost:8081/register"><button class="glow-on-hover" role="button">Register</button></a>
+        <a th:if="${!#authorization.expression('isAuthenticated()')}" href="http://localhost:8081/login"><button class="glow-on-hover" role="button">Log in</button></a>
+        <a th:if="${!#authorization.expression('isAuthenticated()')}" href="http://localhost:8081/register"><button class="glow-on-hover" role="button">Register</button></a>
     </div>
 
     <div class="content">
-        <h1 class="text_shadows">Random Generator</h1>
+        <h1 class="text_shadows-title">Random Generator</h1>
     </div>
 
 <div class="rainbow-box">

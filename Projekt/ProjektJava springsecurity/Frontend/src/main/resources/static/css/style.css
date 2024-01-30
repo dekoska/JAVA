@@ -16,12 +16,6 @@ td{
     margin: 15px;
 }
 
-.buttons{
-    width: 17%;
-    margin: 20px 0 0 auto;
-
-}
-
 .rainbow-box {
     display: flex;
     justify-content: center;
@@ -57,13 +51,33 @@ td{
     --color-quinary: #ee6352;
 }
 
+.logged{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .content {
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.text_shadows {
+
+.text_shadows-hello {
+    text-shadow: 3px 3px 0 #2c90fc, 6px 6px 0 #b8fd33,
+    9px 9px 0 #fec837, 12px 12px 0 #b827fc;
+    /*font-weight: 400;*/
+    text-transform: uppercase;
+    /*font-size: calc(1rem + 2.5vw);*/
+    /*text-align: center;*/
+    /*margin: 0;*/
+    color: #b827fc;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+    display: inline-block;
+}
+
+.text_shadows-title {
     text-shadow: 3px 3px 0 #2c90fc, 6px 6px 0 #b8fd33,
     9px 9px 0 #fec837, 12px 12px 0 #b827fc;
     font-weight: 400;
@@ -121,6 +135,10 @@ td{
     }
 }
 
+.buttons{
+    width: 17%;
+    margin: 20px 0 0 auto;
+}
 /*glowing buttons*/
 
 .button-56 {

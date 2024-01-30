@@ -1,9 +1,8 @@
-package com.example.backend.Service;
+package com.example.backend.service;
 
-import com.example.backend.Exceptions.JokeAlreadyExistsException;
-import com.example.backend.Exceptions.JokeNotFoundException;
-import com.example.backend.Object.Joke;
-import com.example.backend.Repository.JokeRepository;
+import com.example.backend.exception.exceptions.JokeNotFoundException;
+import com.example.backend.object.Joke;
+import com.example.backend.repository.JokeRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

@@ -1,6 +1,6 @@
-package com.example.apidownloader.Controller;
+package com.example.apidownloader.controller;
 
-import com.example.apidownloader.Service.DogService;
+import com.example.apidownloader.service.DogService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

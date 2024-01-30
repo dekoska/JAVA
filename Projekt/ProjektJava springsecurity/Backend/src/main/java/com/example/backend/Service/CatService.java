@@ -1,8 +1,8 @@
-package com.example.backend.Service;
+package com.example.backend.service;
 
-import com.example.backend.Exceptions.CatNotFoundException;
-import com.example.backend.Object.Cat;
-import com.example.backend.Repository.CatRepository;
+import com.example.backend.exception.exceptions.CatNotFoundException;
+import com.example.backend.object.Cat;
+import com.example.backend.repository.CatRepository;
 
 import org.springframework.stereotype.Service;
 
@@ -46,6 +46,8 @@ public class CatService {
        }
        else  throw new CatNotFoundException();
     }
+
+
 
 
 }
